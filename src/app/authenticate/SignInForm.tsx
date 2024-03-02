@@ -36,11 +36,11 @@ export default function SignInForm() {
             <form onSubmit={handleSubmit}>
                 <div>
                    <label htmlFor='signInUsername'>Username</label>
-                   <input id='signInUsername' type='text' value={form.signInUsername} onChange={handleChange}></input>
+                   <input id='signInUsername' type='text' value={form.signInUsername} onChange={handleChange} required={true}></input>
                 </div>
                 <div>
                     <label htmlFor='signInPassword'>Password</label>
-                    <input id='signInPassword' type='password' value={form.signInPassword} onChange={handleChange}></input>
+                    <input id='signInPassword' type='password' value={form.signInPassword} onChange={handleChange} required={true}></input>
                 </div>
                 <button type='submit'>
                     Submit
