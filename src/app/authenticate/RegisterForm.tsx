@@ -39,15 +39,15 @@ export default function RegisterForm() {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor='registerUsername'>Username</label>
-                    <input id='registerUsername' type='text' value={form.registerUsername} onChange={handleChange}></input>
+                    <input id='registerUsername' type='text' value={form.registerUsername} onChange={handleChange} required={true}></input>
                 </div>
                 <div>
                     <label htmlFor='registerPassword'>Password</label>
-                    <input id='registerPassword' type='password' value={form.registerPassword} onChange={handleChange}></input>
+                    <input id='registerPassword' type='password' value={form.registerPassword} onChange={handleChange} required={true}></input>
                 </div>
                 <div>
                     <label htmlFor='reEnterRegisterPassword'>Re-enter Password</label>
-                    <input id='reEnterRegisterPassword' type='password' value={form.reEnterRegisterPassword} onChange={handleChange}></input>
+                    <input id='reEnterRegisterPassword' type='password' value={form.reEnterRegisterPassword} onChange={handleChange} required={true}></input>
                 </div>
                 <button type='submit'>
                     Submit
